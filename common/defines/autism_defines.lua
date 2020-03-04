@@ -1,0 +1,1 @@
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001
