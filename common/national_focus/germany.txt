@@ -518,10 +518,10 @@ random_owned_controlled_state = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = GER_industrial_effort_2IC }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -536,10 +536,10 @@ random_owned_controlled_state = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2IC
@@ -548,14 +548,14 @@ random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2IC
@@ -564,14 +564,14 @@ random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2IC
@@ -597,10 +597,10 @@ random_owned_controlled_state = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = GER_industrial_effort_2_2IC }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -616,10 +616,10 @@ random_owned_controlled_state = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
@@ -628,14 +628,14 @@ random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
@@ -644,14 +644,14 @@ random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
@@ -1219,24 +1219,23 @@ random_owned_controlled_state = {
 		completion_reward = {
 			SOV = {
 				country_event = { id = germany.75 days = 1 }
-				custom_effect_tooltip = needs_approval
 			}
-			# Actual reward effects added in event if Soviets approve
-			effect_tooltip = {
-				# Trade influence with the USSR? Or simply let the opinion mod do the work
-				add_tech_bonus = {
-					name = med_armor_bonus
-					bonus = 1
-					ahead_reduction = 2
-					technology = basic_medium_tank
-				}
-				# Balance research bonus to 2 techs in armor, also in event
-				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 1
-					uses = 2
-					category = armor
-				}
+			
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				ahead_reduction = 2	
+				technology = basic_medium_tank
+			}
+				
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				bonus = 1.0
+				uses = 2
+				technology = improved_medium_tank
+				technology = improved_heavy_tank
+				technology = advanced_light_tank
+				technology = advanced_medium_tank
+				technology = advanced_heavy_tank
 			}
 		}
 	}
