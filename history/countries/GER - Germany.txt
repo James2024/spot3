@@ -105,11 +105,14 @@ set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
-#Trade
-create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
+create_equipment_variant = {
+	name = "Bf 109 E"
+	type = fighter_equipment_1
+	upgrades = {
+		plane_gun_upgrade = 1
+		plane_range_upgrade = 2
+		plane_engine_upgrade = 4
+	}
 }
 
 1939.1.1 = {
@@ -129,7 +132,7 @@ create_import = {
 		GER_autarky_idea
 
 		#laws
-		war_economy
+		partial_economic_mobilisation
 		extensive_conscription
 	}
 	

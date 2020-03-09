@@ -23,6 +23,7 @@ focus_tree = {
 		}
 		available = { has_completed_focus = GER_rhineland }
 		completion_reward = {
+			add_war_support = 0.1 
 			add_ideas = hjalmar_schacht
 			add_tech_bonus = {
 				name = GER_four_year_plan
@@ -1220,24 +1221,6 @@ random_owned_controlled_state = {
 			SOV = {
 				country_event = { id = germany.75 days = 1 }
 			}
-			
-			add_tech_bonus = {
-				name = GER_soviet_treaty
-				ahead_reduction = 2	
-				technology = basic_medium_tank
-			}
-				
-			add_tech_bonus = {
-				name = GER_soviet_treaty
-				bonus = 1.0
-				uses = 2
-				technology = improved_medium_tank
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-			}
-		}
 	}
 
 	focus = {
