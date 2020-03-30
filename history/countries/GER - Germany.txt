@@ -313,7 +313,7 @@ add_ideas = {
 	general_staff
 	export_focus
 	limited_conscription
-	war_economy
+	partial_economic_mobilisation
 }
 add_ideas = GER_mefo_bills_1
 
