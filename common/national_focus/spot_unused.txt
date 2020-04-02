@@ -32339,21 +32339,59 @@ focus = {
 			}
 		}
 	}
+	
+		focus = {
+		id = SPR_the_popular_front
+		icon = GFX_focus_generic_soviet_politics
+		x = 1
+		y = 1
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
 
+		available = {
+			communism > 0.35
+		}
+		
+		bypass = {
+			has_government = communism
+		}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
+		completion_reward = {
+		}
+	}
+	
+		focus = {
+		id = SPA_a_great_spain
+		icon = GFX_focus_generic_soviet_politics
+		x = 1
+		y = 1
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
 
+		available = {
+			communism > 0.35
+		}
+		
+		bypass = {
+			has_government = communism
+		}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-
-
-
-
-
-
-
-
-
+		completion_reward = {
+		}
+	}
+	
 }

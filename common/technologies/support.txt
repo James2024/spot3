@@ -93,7 +93,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -164,7 +164,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			
 			modifier = {
 				factor = 1.2
@@ -210,7 +210,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			
 			modifier = {
 				factor = 1.2
@@ -252,7 +252,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			
 			modifier = {
 				factor = 1.2
@@ -275,6 +275,9 @@ technologies = {
 
 		enable_subunits = {
 			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 		}
 		
 		path = {
@@ -282,7 +285,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -325,7 +328,7 @@ technologies = {
 	
 	tech_recon2 = {
 
-		recon = {
+		category_recon = {
 			recon = 2
 		}
 		
@@ -368,7 +371,7 @@ technologies = {
 	
 	tech_recon3 = {
 
-		recon = {
+		category_recon = {
 			recon = 2
 		}
 		path = {
@@ -409,7 +412,7 @@ technologies = {
 	}
 	tech_recon4 = {
 
-		recon = {
+		category_recon = {
 			recon = 2
 		}
 
@@ -456,7 +459,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -474,6 +477,14 @@ technologies = {
 			modifier = {
 				factor = 5
 				tag = GER
+			}
+
+			modifier = {
+				factor = 10
+				tag = GER
+
+				POL = { has_capitulated = yes }
+				GER = { has_war = yes }
 			}
 			
 			modifier = {
@@ -607,7 +618,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -780,7 +791,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -956,7 +967,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -997,6 +1008,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		
 		
@@ -1035,6 +1047,11 @@ technologies = {
 				factor = 2
 				date > "1942.1.1"
 			}
+
+			modifier = {
+				factor = 2
+				tag = GER
+			}
 		}
 	}
 	
@@ -1042,6 +1059,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		path = {
 			leads_to_tech = tech_logistics_company4
@@ -1084,6 +1102,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 
 		research_cost = 1
@@ -1136,7 +1155,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1154,6 +1173,7 @@ technologies = {
 
 			modifier = {
 				factor = 5
+				is_major = yes
 				date > "1940.1.1"
 			}
 		}
